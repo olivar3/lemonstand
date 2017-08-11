@@ -41,7 +41,7 @@ namespace LemonadeStand
         }
         public void howMuchCups()// if we need to return something, make this into a double.
         {
-            //Method will multiply getNumberOfCups by Cups.
+            balanceAfterCups = playerOne.Balance - (numberOfCups * Cups);//Method will multiply getNumberOfCups by Cups.
         }
         public void getNumberOfIce()
         {
@@ -55,7 +55,7 @@ namespace LemonadeStand
         }
         public void howMuchIce()
         {
-
+            balanceAfterIce = playerOne.Balance - (numberofIce * Cups);
         }
         public void getNumberOfSugar()
         {
@@ -69,7 +69,7 @@ namespace LemonadeStand
         }
         public void howMuchSugar()
         {
-
+            balanceAfterSugar = playerOne.Balance - (numberOfSugar - Sugar);
         }
         public void getNumberOfLemons()
         {
@@ -83,7 +83,7 @@ namespace LemonadeStand
         }
         public void howMuchLemons()
         {
-
+            balanceAfterLemons = playerOne.Balance - (numberOfLemons * Lemons);
         }
         public void getBalance()// this method will subtract bought merch from player.Balance
         {
