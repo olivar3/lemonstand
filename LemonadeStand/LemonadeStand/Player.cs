@@ -8,7 +8,7 @@ namespace LemonadeStand
 {
     public class Player //needs an "allowance"
     {
-        public int roundScore;
+        public int Score;
         public string name;
         public int number;
         public double Balance;
@@ -16,7 +16,7 @@ namespace LemonadeStand
         {
 
         }
-        
+
         public void increaseProfits()
         {
 
@@ -27,7 +27,6 @@ namespace LemonadeStand
         }
         public double Money()
         {
-
             double? number = null;
             double startingBalance = number ?? 50.00;
             Console.WriteLine($"You have:'{startingBalance.ToString()}");
@@ -36,3 +35,4 @@ namespace LemonadeStand
 
     }
 }
+

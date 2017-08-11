@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public class Day //thihs is only for player purposes. weather will have to do with customers.
+    public class Day //thihs is only for player purposes. weather will have to do with customers and Time.
     {
         public Day()
         {

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2B24CFD-C309-4903-BFF8-E8105AF6395A}</ProjectGuid>
+    <ProjectGuid>{26489CD0-A1E8-45CE-9C1B-92EFADA2F736}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LemonadeStand</RootNamespace>
@@ -54,6 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recipe.cs" />
     <Compile Include="Rules.cs" />
+    <Compile Include="Stand.cs" />
     <Compile Include="Store.cs" />
     <Compile Include="Time.cs" />
     <Compile Include="UserInterface.cs" />

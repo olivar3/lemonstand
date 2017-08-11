@@ -9,7 +9,7 @@ namespace LemonadeStand
     public class Store
     {
         public double Cups = 0;
-        public int numberOfCups;
+        public double numberOfCups;
         public double Ice = 0;
         public int numberofIce;
         public double Sugar = 0;
@@ -20,62 +20,79 @@ namespace LemonadeStand
         public double balanceAfterIce;
         public double balanceAfterSugar;
         public double balanceAfterLemons;
-        public Store()
+        Player playerOne;
+        public Store(Player playerOne)
         {
-
+            this.playerOne = playerOne;
         }
         public void displayBalance(Player Player)
         {
-            Console.WriteLine($"you have{Player.Balance} ");
+            Console.WriteLine($"you have{playerOne.Balance} ");
         }
-        public double getCups(Player Player, Game Game)//There will be a null value somewehre here.
+        public void getNumberOfCups()//There will be a null value somewehre here.
         {
             Console.WriteLine("How many Cups do you want? 25, 50, 100, or 200?");
-            double buyCups = double.Parse(Console.ReadLine());
+            numberOfCups = double.Parse(Console.ReadLine());
             if (Cups != 25 || Cups != 50 || Cups != 100 || Cups != 200)
             {
                 Console.WriteLine("Enter a valid choice: 25, 50, 100, or 200");
-            }
-            else if (Cups == 25)
-            {
-                return numberOfCups;
-            }
-            else if (Cups == 50)
-            {
-                return numberOfCups;
-            }
-            else if (Cups == 100)
-            {
-                return numberOfCups;
-            }
-            else if (Cups == 200)
-            {
-                return numberOfCups;
-            }
-            else
-            {
-                return numberOfCups;
+                getNumberOfCups();
             }
         }
-        public void getIce()
+        public void howMuchCups()// if we need to return something, make this into a double.
+        {
+            //Method will multiply getNumberOfCups by Cups.
+        }
+        public void getNumberOfIce()
+        {
+            Console.WriteLine("How much Ice do you want? 50, 100, 150, or 200?");
+            numberOfCups = double.Parse(Console.ReadLine());
+            if (Ice != 25 || Ice != 50 || Ice != 100 || Ice != 200)
+            {
+                Console.WriteLine("Enter a valid choice: 50, 100, 150, or 200");
+                getNumberOfIce();
+            }
+        }
+        public void howMuchIce()
         {
 
         }
-        public void getSugar()
+        public void getNumberOfSugar()
+        {
+            Console.WriteLine("How much Sugar do you want? 20, 50, or 100?");
+            numberOfCups = double.Parse(Console.ReadLine());
+            if (Sugar != 20 || Sugar != 50 || Sugar != 100)
+            {
+                Console.WriteLine("Enter a valid choice: 50, 100, 150, or 200");
+                getNumberOfSugar();
+            }
+        }
+        public void howMuchSugar()
         {
 
         }
-        public void getLemons()
+        public void getNumberOfLemons()
+        {
+            Console.WriteLine("How many Lemons do you want? 10, 30, 70, or 100?");
+            numberOfCups = double.Parse(Console.ReadLine());
+            if (Ice != 25 || Ice != 50 || Ice != 100 || Ice != 200)
+            {
+                Console.WriteLine("Enter a valid choice: 50, 100, 150, or 200");
+                getNumberOfSugar();
+            }
+        }
+        public void howMuchLemons()
         {
 
         }
-        public void getBalance(Player Player)// this method will subtract bought merch from player.Balance
+        public void getBalance()// this method will subtract bought merch from player.Balance
         {
-            double Balance = (Player.Balance - balanceAfterCups);
+            double Balance = ((playerOne.Balance - balanceAfterCups) + (playerOne.Balance - balanceAfterIce) + (playerOne.Balance - balanceAfterSugar) + (playerOne.Balance - balanceAfterLemons));
             Console.WriteLine("Your balance is");
-       }//Console.WriteLine($"{Player.Balance.ToString()}");//See objects.
+        }//Console.WriteLine($"{Player.Balance.ToString()}");//See objects.
         //double buyingCups = Player.Balance - Cups;
         //Console.ReadLine();
         //return balanceAfterCups;
+        //MAYBE?? 
     }
 }

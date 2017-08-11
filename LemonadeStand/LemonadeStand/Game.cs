@@ -13,7 +13,9 @@ namespace LemonadeStand
         Store store;
         public Game()
         {
-            rules = new Rules(); 
+            rules = new Rules();
+            playerOne = new Player();
+            store = new Store(playerOne);
         }
         public void lengthOfGamePlay()//will get a day from class: day
         {

@@ -1,9 +1,3 @@
-C:\Users\young\Desktop\second C# proj\LemonadeStand\LemonadeStand\bin\Debug\LemonadeStand.exe.config
-C:\Users\young\Desktop\second C# proj\LemonadeStand\LemonadeStand\bin\Debug\LemonadeStand.exe
-C:\Users\young\Desktop\second C# proj\LemonadeStand\LemonadeStand\bin\Debug\LemonadeStand.pdb
-C:\Users\young\Desktop\second C# proj\LemonadeStand\LemonadeStand\obj\Debug\LemonadeStand.csprojResolveAssemblyReference.cache
-C:\Users\young\Desktop\second C# proj\LemonadeStand\LemonadeStand\obj\Debug\LemonadeStand.exe
-C:\Users\young\Desktop\second C# proj\LemonadeStand\LemonadeStand\obj\Debug\LemonadeStand.pdb
+C:\Users\young\Desktop\Just in Case\LemonadeStand\LemonadeStand\bin\Debug\LemonadeStand.exe.config
 C:\Users\young\Desktop\second C# proj\lemonstand\LemonadeStand\LemonadeStand\bin\Debug\LemonadeStand.exe.config
-C:\Users\young\Desktop\second C# proj\lemonstand\LemonadeStand\LemonadeStand\obj\Debug\LemonadeStand.exe
-C:\Users\young\Desktop\second C# proj\lemonstand\LemonadeStand\LemonadeStand\obj\Debug\LemonadeStand.pdb
+C:\Users\young\Desktop\second C# proj\lemonstand\LemonadeStand\LemonadeStand\obj\Debug\LemonadeStand.csprojResolveAssemblyReference.cache

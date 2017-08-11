@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class UserInterface
+    public class Stand
     {
+        public Stand()
+        {
+
+        }
 
     }
 }
