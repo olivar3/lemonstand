@@ -12,18 +12,43 @@ namespace LemonadeStand
         public string PartlyCloudy;
         public string Cloudy;
         public string Rainy;
-        public int temperature;
+        public int temp;
+        public int Hot;
+        public int Warm;
+        public int Fair;
+        public int Cool;
+        public int Cold;
         public Weather()
         {
 
         }
-        public void getWeather()
+        public void displayTemp()
         {
- 
+            if(temp <= 59)
+            {
+                Console.WriteLine($"{Cold}");
+            }
+            else if(temp <= 68 || temp >= 60)
+            {
+                Console.WriteLine($"{Cool}");
+            }
+            else if(temp <= 75 || temp >= 69)
+            {
+                Console.WriteLine($"{Fair}");
+            }
+            else if (temp <= 85 || temp >= 76)
+            {
+                Console.WriteLine($"{Warm}");
+            }
+            else
+            {
+                Console.WriteLine($"{Hot}");
+            }
         }
         public void getTemperature()
         {
-            Random temperature(30, 102);
+            Random random = new Random();
+            temp = random.Next(45, 110);
         }
     }
 }
