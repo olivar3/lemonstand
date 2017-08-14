@@ -8,29 +8,17 @@ namespace LemonadeStand
 {
     public class Day //thihs is only for player purposes. weather will have to do with customers and Time.
     {
+
         public Day()
         {
 
         }
-        public void Time()
-        {
 
-        }
-        public void timeLeftInDay()
-        {
 
-        }
-        public void getWeather()
+        public void profitsForDay()
         {
-
+            
         }
-        public void displayWeather()
-        {
 
-        }
-        public void lossOrGainOfProfits()
-        {
-
-        }
     }
 }
