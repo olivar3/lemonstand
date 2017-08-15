@@ -32,15 +32,6 @@ namespace LemonadeStand
         {
             Console.WriteLine($"You have {basket.ToString()}");
         }
-
-        public void rottingInventory()//this will take count of how many days certain things have been here, IF # of Days after purchase > set # of Days, x,y,z is rotten
-        {
-
-        }
-        public void subtractFromInventory()
-        {
-
-        }
         public void askIfPlayerNeedsMore()
         {
 

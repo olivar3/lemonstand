@@ -61,7 +61,7 @@ namespace LemonadeStand
         {
 
         }
-        public void calculateProfits()
+        public void calculateNewBalance()
         {
 
         }

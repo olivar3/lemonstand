@@ -13,8 +13,6 @@ namespace LemonadeStand
         {
 
         }
-
-
         public void profitsForDay()
         {
             

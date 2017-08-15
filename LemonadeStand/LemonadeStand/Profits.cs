@@ -8,14 +8,14 @@ namespace LemonadeStand
 {
     public class Profits // will only be for gains or losses.
     {
+        Player playerOne = new Player();
+        public Profits()
+        {
+
+        }
         public void calculateDayProfits()
         {
-
+            dailyProfits = Console.WriteLine($"{}"); ;
         }
-        public void calculateTotalProfits()
-        {
-
-        }
-
     }
 }

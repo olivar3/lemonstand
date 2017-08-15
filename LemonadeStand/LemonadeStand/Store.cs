@@ -8,13 +8,13 @@ namespace LemonadeStand
 {
     public class Store
     {
-        public double Cups = 0;
+        public double Cups = .05;
         public double numberOfCups;
-        public double Ice = 0;
+        public double Ice = .02;
         public int numberofIce;
-        public double Sugar = 0;
+        public double Sugar = .40;
         public int numberOfSugar;
-        public double Lemons = 0; //These four things need monetary values. Give it to them.
+        public double Lemons = .75; //These four things need monetary values. Give it to them.
         public int numberOfLemons;
         public double balanceAfterCups;
         public double balanceAfterIce;
@@ -88,7 +88,7 @@ namespace LemonadeStand
         public void getBalance()// this method will subtract bought merch from player.Balance
         {
             double Balance = ((playerOne.Balance - balanceAfterCups) + (playerOne.Balance - balanceAfterIce) + (playerOne.Balance - balanceAfterSugar) + (playerOne.Balance - balanceAfterLemons));
-            Console.WriteLine("Your balance is");
+            Console.WriteLine($"Your balance is{Balance}");
         }//Console.WriteLine($"{Player.Balance.ToString()}");//See objects.
         //double buyingCups = Player.Balance - Cups;
         //Console.ReadLine();

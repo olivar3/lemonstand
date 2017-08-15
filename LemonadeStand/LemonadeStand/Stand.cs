@@ -23,7 +23,6 @@ namespace LemonadeStand
         {
             double newlemonadePrice = lemonadePrice;
         }
-
         public void inPitcher()
         {
             pitcher = customer.cupsBought - pitcher;

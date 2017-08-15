@@ -10,9 +10,14 @@ namespace LemonadeStand
     {
         Weather weather;
         Stand stand;
+        Recipe recipe;
         public double profits;
         public int Customers =  200;
-        public int passCustomer;
+        public int customersNoLikeCold = 70;
+        public int customerNoLikecool = 30;
+        public int customerNoLikeFair = 10;
+        public int cheapCustomer = 100;
+        public int trendyCustomer = 100;
         public int buyCustomer;
         public int purchasingCustomers;
         public int interestedCustomer;
@@ -32,49 +37,39 @@ namespace LemonadeStand
         }
         public void numberOfCustomers()
         {
-            purchasingCustomers = Customers - passCustomer;
+            purchasingCustomers = (Customers - cheapCustomer) +(Customers - customerNoLikeFair) + (Customers - customerNoLikecool) + (Customers - customersNoLikeCold);
         }
         public void customerFeelings()
         {
 
             if (weather.Cold <= weather.tempCustomer)
             {
-                //subtract customers who dont like cold
+                Customers = Customers - customersNoLikeCold;
             }
             else if (weather.Cool <= weather.tempCustomer)
             {
-                //sutbtract customers who dont like cool or cold
+                Customers = Customers - customerNoLikecool;
             }
             else if (weather.Fair <= weather.tempCustomer)
             {
-                //subtract very little customers
+                Customers = Customers - customerNoLikeFair;
             }
-            else if (weather.Warm <= weather.tempCustomer)
-            {
-                //dont subtract anyone
-            }
-            else if(weather.Hot <= weather.tempCustomer)
-            {
-               // dont subtract anyone. 
-            }
+        }
 
-        //If weather is such and such number of customers - sunnyonlycustomers, fairweathercustomers, anyweathercustomers.?
-        }
-        public void passingCustomer()
-        {
-            //composed of those who dont like the current weather.
-        }
         public void buingCustomer()
         {
             // If weather is such and such, # of customers - 
         }
-        public void customerLikesPrice()
+        public void customerDoesntLikePrice()
         {
-
+            if (stand.lemonadePrice >= 3.00)
+            {
+                Customers = Customers - cheapCustomer;
+            }
         }
         public void Popularity()
         {
-            // adds customers who would otherwise not come out on fair or cool days. Do i need this?
+            if (recipe.// adds customers who would otherwise not come out on fair or cool days. Do i need this?
         }
     }
 }

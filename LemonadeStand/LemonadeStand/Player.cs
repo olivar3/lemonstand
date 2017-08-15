@@ -12,18 +12,15 @@ namespace LemonadeStand
         public string name;
         public int number;
         public double Balance;
+        public double dailyProfits;
+        public double totalProfits;
         public Player()
         {
 
         }
-
         public void increaseProfits()
         {
-
-        }
-        public void getProfits()
-        {
-
+            totalProfits = dailyProfits + totalProfits;
         }
         public double Money()
         {
