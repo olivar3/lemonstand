@@ -9,16 +9,30 @@ namespace LemonadeStand
     public class Customer
     {
         Weather weather;
+        Stand stand;
         public double profits;
         public int Customers =  200;
         public int passCustomer;
         public int buyCustomer;
+        public int purchasingCustomers;
+        public int interestedCustomer;
+        public int popularCustomer;
+        public double earnings;
+        public int cupsBought;
         public Customer()
         {
         }
+        public void numberOfCupsBought()
+        {
+            cupsBought = buyCustomer + interestedCustomer;
+        }
+        public void customerSpent()
+        {
+            earnings = purchasingCustomers * stand.lemonadePrice;
+        }
         public void numberOfCustomers()
         {
-        //number of customers is 200 for a single day.
+            purchasingCustomers = Customers - passCustomer;
         }
         public void customerFeelings()
         {
