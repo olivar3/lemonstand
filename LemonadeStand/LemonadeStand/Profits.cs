@@ -15,7 +15,6 @@ namespace LemonadeStand
         }
         public void calculateDayProfits()
         {
-            dailyProfits = Console.WriteLine($"{}"); ;
         }
     }
 }

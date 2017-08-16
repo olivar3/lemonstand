@@ -16,6 +16,7 @@ namespace LemonadeStand
         public int numberOfSugar;
         public double Lemons = .75; //These four things need monetary values. Give it to them.
         public int numberOfLemons;
+        public double Spent;
         public double balanceAfterCups;
         public double balanceAfterIce;
         public double balanceAfterSugar;
@@ -29,7 +30,7 @@ namespace LemonadeStand
         {
             Console.WriteLine($"you have{playerOne.Balance} ");
         }
-        public void getNumberOfCups()//There will be a null value somewehre here.
+        public void getNumberOfCups()
         {
             Console.WriteLine("How many Cups do you want? 25, 50, 100, or 200?");
             numberOfCups = double.Parse(Console.ReadLine());
@@ -84,6 +85,10 @@ namespace LemonadeStand
         public void howMuchLemons()
         {
             balanceAfterLemons = playerOne.Balance - (numberOfLemons * Lemons);
+        }
+        public void moneySpent()
+        {
+            Spent = (numberOfCups * Cups) + (numberofIce * Ice) + (numberOfLemons * Lemons) + (numberOfSugar * Sugar);
         }
         public void getBalance()// this method will subtract bought merch from player.Balance
         {

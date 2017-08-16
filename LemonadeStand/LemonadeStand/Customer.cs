@@ -24,6 +24,7 @@ namespace LemonadeStand
         public int popularCustomer;
         public double earnings;
         public int cupsBought;
+        public int popular;
         public Customer()
         {
         }
@@ -69,7 +70,29 @@ namespace LemonadeStand
         }
         public void Popularity()
         {
-            if (recipe.// adds customers who would otherwise not come out on fair or cool days. Do i need this?
+            if (recipe.currentRecipe == recipe.perfectRecipe)
+            {
+                popular = 5;
+            }
+            else
+            {
+                recipe.closePerfect();
+            }
+        }
+        public void raitingForPopularity()
+        {
+            if (recipe.Stars == 4)
+            {
+                Customers -= 20;
+            }
+            else if(recipe.Stars == 3)
+            {
+                Customers -= 50;
+            }
+            else if(recipe.Stars <= 2)
+            {
+                Customers -= 100;
+            }
         }
     }
 }
